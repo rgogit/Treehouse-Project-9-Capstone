@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto',sans-serif ;
+}
+hr {
+    background-color: teal;
+    height: 1px;
+    border: none;
+}
+body{
+    margin:0 auto;
+    background-color: #faf3f3;
+}
+h3{
+    margin:1rem;
+    font-size: larger;
+}
+.center{
+    text-align: center;
+}
+.font-bold{
+    font-weight: bolder;
+}
+.wrapper{
+    margin: 0 auto;
+}
+header,
+footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #008080;
+}
+.head-name,
+.foot-name,
+.copy{
+    color: white;
+}
+.btt,
+.nav{
+    padding: .75em;
+}
+.nav a{
+    padding: 0 .5rem;
+    text-decoration: none;   
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+}
+ .nav a:hover{
+    border-radius: 5px; 
+    background-color: #008080; 
+}
+.about,
+.skills,
+.projects,
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.porto{
+    text-align: center;
+    margin-top: .25em;
+}
+.porto-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto;
+}
+.bio{
+    padding: .75rem;
+    text-align: center;
+}
+.links{
+    margin-bottom: 1rem;
+}
+ul.studies {
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .studies li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #ff9904;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+  }
+  .studies li:nth-child(odd) {
+    background: #0399ff;
+  }
+  .card{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: .5rem;
+      margin: 10px auto;
+      width: 90%;
+      height:435px;
+      border: 1px solid teal;
+      border-radius: 5px;
+      background-color: white;
+  }
+  .card-skills{
+      margin-bottom: .5em;
+  }
+  .project-pic{
+      height: 230px;
+      width: 240px;
+  }
+  .link_button {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid .75px teal;
+    background: teal;
+    color: white;
+    text-decoration: none;
+}
+.link_button:hover{
+    border: solid 1px teal;
+    background: #62bbbb;   
+}
+.social{
+    width:80px;
+    height:80px;
+    margin: .25em .5em;
+    opacity: .5;
+    transition: all .5s;
+}
+a.social:hover {
+    opacity: 1;
+}
+.social img{
+    width:70px;
+    height:70px;
+}
+/*Media Queries*/
+@media (min-width: 768px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .head-name{
+        padding-left: 2rem;
+    }
+    .nav{
+        padding-right: 2rem;
+    }
+    .nav a{
+        font-size:larger;
+    }
+    .about{
+        flex-direction: row;  
+        margin-left: .75em;
+    }
+    .projects{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: baseline;
+    }
+    .card{
+        width: 40%;
+    }
+}
