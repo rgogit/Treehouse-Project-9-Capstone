@@ -40,7 +40,7 @@ document.getElementById("contact").addEventListener("mouseout", function() {
     document.getElementById("contact").style.backgroundColor = "#faf3f3";
 });
 
-//foooter
+//footer
 document.getElementById("foot").addEventListener("mouseover", function() {
     document.getElementById("foot").style.backgroundColor = "#62bbbb";
 });   
